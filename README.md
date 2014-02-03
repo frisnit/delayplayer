@@ -22,7 +22,7 @@ Ingest
 
 Playout
 -------
-> An Icecast server operating in relay mode maintains a number of streams endpoint for each station and timezone. Each of these connects to an instance of a lightweight server ('streamer') that streams the timestamped chunks from the appropriate point in the past. This process is started by cron (start_streamer.sh) so that it's restarted automatically if it drops out (which it does occasionally). You'll need to compile streamer.c on your system to create the 'streamer' binary.
+> An Icecast server operating in relay mode (config file icecast_minimal.xml) maintains a number of streams endpoint for each station and timezone. Each of these connects to an instance of a lightweight server ('streamer') that streams the timestamped chunks from the appropriate point in the past (on port 2345 in this example). This process is started by cron (start_streamer.sh) so that it's restarted automatically if it drops out (which it does occasionally). You'll need to compile streamer.c on your system to create the 'streamer' binary.
 
 
 
@@ -44,7 +44,7 @@ Monitoring
 
 Front end
 ---------
-The front end HTML and Flash player files are contained in the /html directory. Make this your server root.
+The front end HTML and Flash player files are contained in the /html directory. Make this your server root. The .htaccess file performs a basic redirect to the mobile view.
 
 Dependencies
 ------------
