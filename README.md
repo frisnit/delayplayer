@@ -17,6 +17,16 @@ Ingest
     
     ffmpeg            : take input from STDIN, transcode and output binary MP3 data to STDOUT
     save_from_pipe.pl : take input from STDIN and save in timestamped files to disk
+    
+    example (all errors piped to /dev/null):
+    
+    # start radio 1
+    /home/ec2-user/delayplayer/transcoder/stream_to_pipe.pl --service bbc_radio_one | 
+        /usr/local/bin/ffmpeg -i pipe:0 -f mp3 -acodec libmp3lame -b:a 56k -ar 32000 pipe:1 2> /dev/null | 
+        /home/ec2-user/delayplayer/transcoder/save_from_pipe.pl --path /home/ec2-user/delayplayer/transcoder/radio_one/  > /dev/null 2>&1 &
+
+    
+    
 
 > Files older than 24 hours are deleted by a cron job that runs every hour
 
