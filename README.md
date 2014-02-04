@@ -5,6 +5,8 @@ A collection of scripts to delay live streaming radio services for synchronising
 
 See http://www.frisnit.com/2012/03/12/delayplayer-radio-4-synced-to-your-timezone/ for full details
 
+The site can be seen at http://cdn.frisnit.com/delayplayer/ although the streaming functionality will cease at the end of February 2014.
+
 The system consists of two main parts:
 
 Ingest
@@ -28,7 +30,7 @@ Ingest
     
     
 
-> Files older than 24 hours are deleted by a cron job that runs every hour
+> Files older than 24 hours are deleted by a cron job that runs every hour. All the cron jobs used in this project can be found in crontab.txt.
 
 Playout
 -------
