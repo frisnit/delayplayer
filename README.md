@@ -1,6 +1,8 @@
 delayplayer
 ===========
 
+![alt tag](https://raw.github.com/frisnit/delayplayer/master/delayplayer.png)
+
 A collection of scripts to delay live streaming radio services for synchronising with different time zones. This is all very beta and very much a proof of concept.
 
 See http://www.frisnit.com/2012/03/12/delayplayer-radio-4-synced-to-your-timezone/ for full details
