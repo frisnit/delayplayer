@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Delayplayer</title>
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="swfobject.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30582623-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body>
+
+
+	<div class="page">
+
+		<div class="maintitle">
+			<div>
+				<h1>DelayPlayer</h1>
+				<h2>Internet radio on your time</h2>
+
+				<div style="height:20px;background-color:#eee;">
+					<div style="background-color:#eee;float:left;margin-right:15px;">
+						<a href="http://www.facebook.com/delayplayer" target="_blank"><img  style="background-color:#eee;" src="facebook-small.png"></a>
+					</div>
+					<div style="background-color:#eee;float:left;">
+						<a href="http://www.twitter.com/delayplayer" target="_blank"><img style="background-color:#eee;" src="twitter-small.png"></a>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+
+		<div class="emp-container">
+
+			<div id="flashContainer" class="player">
+				<img name="transport" onclick="transportClick();" src="playerskin/stop.gif"/>
+			</div>
+
+			<span id="info" class="nowplaying">Select station and timezone then click to play</span>
+		</div>
+
+		<div class="panel">
+
+			<div class="station">
+				<div>
+					<div id="radio_one" class="container container-selected"></div>
+					<div id="radio_two" class="container"></div>
+					<div id="radio_four" class="container"></div>
+				</div>
+			</div>
+
+			<div class="selector">
+				<div id="default-station" class="tab-selected" onclick="selectStation(this,'radio_one');"><span class="station-logos radio_one">BBC Radio 1</span><div class="tab-spacer"></div></div>
+				<div class="tab" onclick="selectStation(this,'radio_two');"><span class="station-logos radio_two">BBC Radio 2</span><div class="tab-spacer"></div></div>
+				<div class="tab" onclick="selectStation(this,'radio_four');"><span class="station-logos radio_four">BBC Radio 4</span><div class="tab-spacer"></div></div>
+			</div>
+
+		</div>
+		
+	</div>
+
+	<div class="footer">
+		
+		Delayplayer &copy;2013&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email info@delayplayer.com<br/><br/>
+		<div id="player-container">
+			<div name="flashcontent" id="flashcontent"></div>
+		</div>
+
+				<div style="height:20px;background-color:#fff;">
+
+					<div style="background-color:#eee;float:left;margin-right:15px;">
+						<img src="./images/windows.jpg">
+					</div>
+
+					<div style="background-color:#eee;float:left;margin-right:15px;">
+						<img src="./images/mac.gif">
+					</div>
+
+					<div style="background-color:#eee;float:left;margin-right:15px;">
+						<img src="./images/linux.jpg">
+					</div>
+
+					<div style="background-color:#eee;float:left;margin-right:15px;">
+						<img src="./images/ios.png">
+					</div>
+
+					<div style="background-color:#eee;float:left;margin-right:15px;">
+						<img src="./images/android.gif">
+					</div>
+
+				</div>
+
+		</div>
+	</div>
+
+	<div id="size_test"></div>
+
+</body>
+
+</html>
+
+

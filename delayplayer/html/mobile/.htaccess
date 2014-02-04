@@ -1,0 +1,4 @@
+RewriteEngine off
+
+#RewriteCond  %{HTTP_USER_AGENT}  ^.*iPhone.*
+#RewriteRule  ^(.*)$                 http://www.delayplayer.com/demo3/mobile/$1  [L]

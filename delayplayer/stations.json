@@ -1,0 +1,185 @@
+{
+	"timezones":
+	[
+		{
+			"name":"New York",
+			"id":"ny",
+			"stream":"http://cdn.frisnit.com:8000/radio_one/edt.mp3",
+			"offset": 300
+		},
+		{
+			"name":"San Francisco",
+			"id":"sf",
+			"stream":"http://cdn.frisnit.com:8000/radio_one/pdt.mp3",
+			"offset": 480
+		},
+		{
+			"name":"Brisbane",
+			"id":"syd",
+			"stream":"http://cdn.frisnit.com:8000/radio_one/au_edt.mp3",
+			"offset": 840
+		},
+		{
+			"name":"Hong Kong",
+			"id":"hk",
+			"stream":"http://cdn.frisnit.com:8000/radio_one/hkt.mp3",
+			"offset": 1020
+		}
+	],
+
+	"stations":
+	[
+		{
+			"name": "Radio 1",
+			"id": "radio_one",
+			"feed": "http://www.bbc.co.uk/radio1/programmes/schedules/england/",
+			"logo": "http://www.bbc.co.uk/pressoffice/images/bank/logos/300radio1.gif",
+			"zones":
+			[
+			{
+				"name":"New York",
+				"stream":"http://cdn.frisnit.com:8000/radio_one/edt.mp3",
+				"offset": 300
+			},
+			{
+				"name":"San Francisco",
+				"stream":"http://cdn.frisnit.com:8000/radio_one/pdt.mp3",
+				"offset": 480
+			},
+			{
+				"name":"Brisbane",
+				"stream":"http://cdn.frisnit.com:8000/radio_one/au_edt.mp3",
+				"offset": 840
+			},
+			{
+				"name":"Hong Kong",
+				"stream":"http://cdn.frisnit.com:8000/radio_one/hkt.mp3",
+				"offset": 1020
+			}
+			]
+		},
+
+		{
+			"name": "Radio 2",
+			"id": "radio_two",
+			"feed": "http://www.bbc.co.uk/radio2/programmes/schedules/",
+			"logo": "http://www.bbc.co.uk/pressoffice/images/bank/logos/300radio2.gif",
+			"zones":
+			[
+			{
+				"name":"New York",
+				"stream":"http://cdn.frisnit.com:8000/radio_two/edt.mp3",
+				"offset": 300
+			},
+			{
+				"name":"San Francisco",
+				"stream":"http://cdn.frisnit.com:8000/radio_two/pdt.mp3",
+				"offset": 480
+			},
+			{
+				"name":"Brisbane",
+				"stream":"http://cdn.frisnit.com:8000/radio_two/au_edt.mp3",
+				"offset": 840
+			},
+			{
+				"name":"Hong Kong",
+				"stream":"http://cdn.frisnit.com:8000/radio_two/hkt.mp3",
+				"offset": 1020
+			}
+			]
+		},
+
+
+		{
+			"name": "Radio 3",
+			"id": "radio_three",
+			"feed": "http://www.bbc.co.uk/radio3/programmes/schedules/",
+			"logo": "http://www.bbc.co.uk/pressoffice/images/bank/logos/300radio3.gif",
+			"zones":
+			[
+			{
+				"name":"New York",
+				"stream":"http://cdn.frisnit.com:8000/radio_three/edt.mp3",
+				"offset": 300
+			},
+			{
+				"name":"San Francisco",
+				"stream":"http://cdn.frisnit.com:8000/radio_three/pdt.mp3",
+				"offset": 480
+			},
+			{
+				"name":"Brisbane",
+				"stream":"http://cdn.frisnit.com:8000/radio_three/au_edt.mp3",
+				"offset": 840
+			},
+			{
+				"name":"Hong Kong",
+				"stream":"http://cdn.frisnit.com:8000/radio_three/hkt.mp3",
+				"offset": 1020
+			}
+			]
+		},
+
+		{
+			"name": "Radio 4",
+			"id": "radio_four",
+			"feed": "http://www.bbc.co.uk/radio4/programmes/schedules/fm/",
+			"logo": "http://www.bbc.co.uk/pressoffice/images/bank/logos/300radio4.gif",
+			"zones":
+			[
+			{
+				"name":"New York",
+				"stream":"http://cdn.frisnit.com:8000/radio_four/edt.mp3",
+				"offset": 300
+			},
+			{
+				"name":"San Francisco",
+				"stream":"http://cdn.frisnit.com:8000/radio_four/pdt.mp3",
+				"offset": 480
+			},
+			{
+				"name":"Brisbane",
+				"stream":"http://cdn.frisnit.com:8000/radio_four/au_edt.mp3",
+				"offset": 840
+			},
+			{
+				"name":"Hong Kong",
+				"stream":"http://cdn.frisnit.com:8000/radio_four/hkt.mp3",
+				"offset": 1020
+			}
+			]
+		},
+		
+		{
+			"name": "Radio 5 Live",
+			"id": "radio_five",
+			"feed": "http://www.bbc.co.uk/5live/programmes/schedules/",
+			"logo": "http://www.bbc.co.uk/pressoffice/images/bank/logos/300radio5.gif",
+			"zones":
+			[
+			{
+				"name":"New York",
+				"stream":"http://cdn.frisnit.com:8000/radio_five/edt.mp3",
+				"offset": 300
+			},
+			{
+				"name":"San Francisco",
+				"stream":"http://cdn.frisnit.com:8000/radio_five/pdt.mp3",
+				"offset": 480
+			},
+			{
+				"name":"Brisbane",
+				"stream":"http://cdn.frisnit.com:8000/radio_five/au_edt.mp3",
+				"offset": 840
+			},
+			{
+				"name":"Hong Kong",
+				"stream":"http://cdn.frisnit.com:8000/radio_five/hkt.mp3",
+				"offset": 1020
+			}
+			]
+		}
+		
+				
+	]
+}

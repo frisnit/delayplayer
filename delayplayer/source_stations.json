@@ -1,0 +1,22 @@
+{
+	"stations":
+	[
+		{
+			"name": "Radio 1",
+			"id": "radio_one",
+			"feed": "http://www.bbc.co.uk/radio1/programmes/schedules/england/"
+		},
+
+		{
+			"name": "Radio 2",
+			"id": "radio_two",
+			"feed": "http://www.bbc.co.uk/radio2/programmes/schedules/"
+		},
+
+		{
+			"name": "Radio 4",
+			"id": "radio_four",
+			"feed": "http://www.bbc.co.uk/radio4/programmes/schedules/fm/"
+		}		
+	]
+}

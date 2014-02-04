@@ -1,0 +1,339 @@
+*
+{
+	background-color:#fff;
+	color:#000;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+body
+{
+	font-size: 15px;
+}
+
+#size_test
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	visibility:hidden;
+	text-align:center;
+	height:auto;
+	width:auto;
+	font-family: mainfont,sans-serif;
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+A:link {text-decoration: none;}
+A:visited {text-decoration: none;}
+A:active {text-decoration: none;}
+A:hover {text-decoration: underline;}
+
+div.location
+{
+	width:178px;
+	font-size: 15px;
+	color:#fff;
+	background-color:#6666cc;
+	margin-bottom:2px;
+	border:0px;
+	padding:0px;
+}
+
+div.logo
+{
+}
+
+div.title
+{
+	text-align:center;
+	width:178px;
+	height:40px;
+	font-size: 15px;
+	font-weight:700;
+}
+
+div.subtitle
+{
+	width:178px;
+	font-size: 10px;
+	height:30px;
+}
+
+div.time
+{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	font-size: 13px;
+	width:178px;
+}
+
+div.page
+{
+	width: 100%;
+}
+
+@font-face
+{
+  font-family: mainfont;
+  src: url('VeraSerif.ttf');
+}
+
+h1
+{
+    margin-top: 0px;
+	font-family: mainfont,sans-serif;
+	font-size: 70px;
+    margin-bottom: 0px;
+	background-color:#eee;
+}
+
+h2
+{
+    margin: 0px;
+    padding-bottom:10px;
+	font-family: mainfont,sans-serif;
+	font-size: 20px;
+	background-color:#eee;
+}
+
+h3
+{
+    margin-top: 0px;
+	font-family: sans-serif;
+	font-size: 15px;
+	background-color:#eee;
+}
+
+div.maintitle
+{
+	color:#300;
+	width:95%;
+	background-color:#eee;
+	padding: 10px 10px 10px 50px;
+	margin-bottom:20px
+}
+
+div.social
+{
+	font-size: 13px;
+	background-color: #fff;
+}
+
+div.facebook
+{
+	float: left;
+	background-color:#fff;
+}
+
+.facebook img
+{
+	background-color:#fff;
+	margin-right:25px;
+}
+
+div.twitter
+{
+	float: left;
+	background-color:#fff;
+}
+
+.twitter img
+{
+	background-color:#fff;
+}
+
+div.panel
+{
+	position:relative;
+	top:-50px;
+	left:0px;
+	background-color:#fff;
+	margin: 0px 0px 0px 50px;
+}
+
+div.selector
+{
+	clear: both;
+	position: relative;
+	top: 0px;
+}
+
+div.programme_image
+{
+	position:relative;
+	left: 0px;
+	top: 0px;
+	width: 	178px;
+	height: 100px;
+	margin-bottom: 2px;
+	background-color: #999;
+}
+
+.programme_image img
+{
+	display: block;
+}
+
+div.play_icon
+{
+	position:absolute;
+	left: 0px;
+	top: 33px;
+}
+
+div
+{
+	font-family: mainfont,sans-serif;
+}
+
+div.programme
+{
+	float: left;
+	background-color:#ddd;
+	margin:10px;
+	padding: 2px;
+	border: 2px solid #bbb;
+	width:178px;
+	text-align: center;
+}
+
+div.programme-selected
+{
+	border-color:#00f;
+}
+ 
+.station-logos
+{
+	background: transparent url(http://static.bbci.co.uk/iplayer/3.48.1/img/radio_station_logos.png) no-repeat 0 0;
+	display: block;
+	text-indent: -9999px;
+	width: 66px;
+	height: 37px;
+	background-color:#fff;
+}
+
+.radio_two { background-position: 0 -261px; }
+.radio_one { background-position: -348px -174px; }
+.radio_four{ background-position: -116px -87px; }
+
+div.tab-selected
+{
+	position: relative;
+	top: 0px;
+	border:5px;
+	float: left;
+	background-color: #fff;
+	border-color: #e95d10;
+	border-bottom:0px;
+	border-style:solid;
+	margin: 0px;
+	margin-right: 5px;
+	padding: 5px 5px 13px 5px;
+	width: 66px;
+}
+
+div.tab
+{
+	position: relative;
+	top: 0px;
+	border:5px;
+	border-bottom:0px;
+	border-style:solid;
+	float: left;
+	background-color: #fff;
+	border-color: #ccc;
+	margin-right: 5px;
+	padding: 5px 5px 8px 5px;
+	width: 66px;
+}
+
+div.tab-spacer
+{
+
+}
+
+.tab:hover
+{
+	background-color: #ccc;
+}
+
+div.emp-container
+{
+	position:relative;
+	top:1px;
+	left:324px;
+	width:542px;
+	height: 33px;
+	border: 5px solid #e95d10;
+	background-color: #fff;
+	padding: 4px;
+	margin: 0px;
+}
+
+div.player
+{
+	width:30px;
+	height:30px;
+	border: 0px;
+	float:left;
+	margin-top:1px;
+	margin-right:10px;
+}
+
+.nowplaying
+{
+	position:relative;
+	top:25%;
+	font-family: mainfont,sans-serif;
+	font-size: 16px;
+	float:left;
+}
+
+div.station
+{
+	position:relative;
+	top:55px;
+	clear:both;
+}
+
+div.container
+{
+	position:absolute;
+	top:0px;
+	border: 5px solid #e95d10;
+	padding: 0px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	visibility:hidden;
+}
+
+div.container-selected
+{
+	visibility:visible;
+}
+
+div.spacer
+{
+	clear: both;
+	border: 5px solid #fff;
+}
+
+div.footer
+{
+	background-color:#fff;
+	font-family: mainfont,sans-serif;
+	position:relative;
+	top:250px;
+	left:50px;
+	width:100%;
+	margin-top:0px;
+	padding-bottom:20px;
+	font-size: 12px;
+	clear:both;
+}
+

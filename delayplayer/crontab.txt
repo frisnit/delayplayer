@@ -1,0 +1,17 @@
+# Minute   Hour   Day of Month       Month          Day of Week        Command    
+# (0-59)  (0-23)     (1-31)    (1-12 or Jan-Dec)  (0-6 or Sun-Sat)                
+
+*/5 * * * * php /home/ec2-user/delayplayer/monitor-all.php > /home/ec2-user/delayplayer/html/monitor.html 2>&1
+
+#  make sure servers are running
+     *       *           *             *                *             /bin/bash /home/ec2-user/delayplayer/transcoder/start.sh
+     *       *           *             *                *             /home/ec2-user/delayplayer/transcoder/start_streamer.sh
+
+# update now/next
+     *       *           *              *               *            php /home/ec2-user/delayplayer/update_now_playing.php > /dev/null 2>&1
+
+# delete stream files older than 24 hours
+     0       *           *              *               *             find /home/ec2-user/delayplayer/transcoder/radio_one/ -type f -mmin +1440 -delete
+     0       *           *              *               *             find /home/ec2-user/delayplayer/transcoder/radio_two/ -type f -mmin +1440 -delete
+     0       *           *              *               *             find /home/ec2-user/delayplayer/transcoder/radio_four/ -type f -mmin +1440 -delete
+

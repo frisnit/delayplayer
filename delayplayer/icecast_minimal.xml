@@ -1,0 +1,263 @@
+<icecast>
+    <limits>
+        <clients>100</clients>
+        <sources>10</sources>
+        <threadpool>5</threadpool>
+        <queue-size>524288</queue-size>
+        <client-timeout>300</client-timeout>
+        <header-timeout>10</header-timeout>
+        <source-timeout>300</source-timeout>
+        <!-- If enabled, this will provide a burst of data when a client 
+             first connects, thereby significantly reducing the startup 
+             time for listeners that do substantial buffering. However,
+             it also significantly increases latency between the source
+             client and listening client.  For low-latency setups, you
+             might want to disable this. -->
+        <burst-on-connect>1</burst-on-connect>
+        <!-- same as burst-on-connect, but this allows for being more
+             specific on how much to burst. Most people won't need to
+             change from the default 64k. Applies to all mountpoints  -->
+        <burst-size>65535</burst-size>
+    </limits>
+    
+    <authentication>
+        <source-password>x</source-password>
+        <relay-password>x</relay-password>
+        <admin-user>admin</admin-user>
+        <admin-password>x</admin-password>
+    </authentication>
+
+<!--
+
+	delays are relative (don't depend on server time)
+	only the schedule lookup needs to be aligned to Europe/London
+
+-->
+
+    <hostname>cdn.frisnit.com</hostname>
+    <listen-socket>
+        <port>8000</port>
+        <shoutcast-mount>/stream.mp3</shoutcast-mount>
+    </listen-socket>
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=300&amp;path=radio_one</mount>
+        <local-mount>/radio_one/edt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 1</stream-name>
+        <stream-description>Radio 1 -4 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=480&amp;path=radio_one</mount>
+        <local-mount>/radio_one/pdt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 1</stream-name>
+        <stream-description>Radio 1 -7 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=840&amp;path=radio_one</mount>
+        <local-mount>/radio_one/au_edt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 1</stream-name>
+        <stream-description>Radio 1 -13 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=1020&amp;path=radio_one</mount>
+        <local-mount>/radio_one/hkt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 1</stream-name>
+        <stream-description>Radio 1 -16 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+<!-- ============================================================= -->
+
+
+
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=300&amp;path=radio_two</mount>
+        <local-mount>/radio_two/edt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 2</stream-name>
+        <stream-description>Radio 2 -4 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=480&amp;path=radio_two</mount>
+        <local-mount>/radio_two/pdt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 2</stream-name>
+        <stream-description>Radio 2 -7 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=840&amp;path=radio_two</mount>
+        <local-mount>/radio_two/au_edt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 2</stream-name>
+        <stream-description>Radio 2 -13 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=1020&amp;path=radio_two</mount>
+        <local-mount>/radio_two/hkt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 2</stream-name>
+        <stream-description>Radio 2 -16 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+
+
+
+
+
+
+<!-- ============================================================= -->
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=300&amp;path=radio_four</mount>
+        <local-mount>/radio_four/edt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 4</stream-name>
+        <stream-description>Radio 4 -4 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=480&amp;path=radio_four</mount>
+        <local-mount>/radio_four/pdt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 4</stream-name>
+        <stream-description>Radio 4 -7 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=840&amp;path=radio_four</mount>
+        <local-mount>/radio_four/au_edt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 4</stream-name>
+        <stream-description>Radio 4 -13 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+    <relay>
+        <server>127.0.0.1</server>
+        <port>2345</port>
+        <mount>/?delay=1020&amp;path=radio_four</mount>
+        <local-mount>/radio_four/hkt.mp3</local-mount>
+        <relay-shoutcast-metadata>0</relay-shoutcast-metadata>
+        <on-demand>1</on-demand>
+	<bitrate>56</bitrate>
+        <stream-name>Radio 4</stream-name>
+        <stream-description>Radio 4 -16 hours</stream-description>
+        <genre>talk</genre>
+        <type>application/mp3</type>
+        <burst-size>65536</burst-size>
+        <mp3-metadata-interval>4096</mp3-metadata-interval>
+    </relay>
+
+
+    <fileserve>1</fileserve>
+    <paths>
+        <logdir>/tmp</logdir>
+        <webroot>/usr/local/share/icecast/web/</webroot>
+        <adminroot>/usr/local/share/icecast/admin</adminroot>
+        <alias source="/" dest="/status.xsl"/>
+    </paths>
+    <logging>
+        <accesslog>access.log</accesslog>
+        <errorlog>error.log</errorlog>
+      	<loglevel>2</loglevel> <!-- 4 Debug, 3 Info, 2 Warn, 1 Error -->
+    </logging>
+</icecast>
